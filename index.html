@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end font -->
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- end axios -->
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-container" id="search-container">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            id="search-input"
+            required
+          />
+          <input type="submit" value="Search" id="search-btn" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-details">
+          <h1 id="city"></h1>
+          <p>
+            <span id="day"></span> <span id="hours"></span>:<span
+              id="minutes"
+            ></span
+            >, <span id="weather-condition"></span>
+            <br />
+            Humidity: <span id="humidity"></span>, Wind: <span id="wind"></span>
+          </p>
+        </div>
+        <div class="city-temperature">
+          <div class="city-temperature-icon" id="city-temperature-icon"></div>
+          <div
+            class="city-temperature-degrees"
+            id="city-temperature-degrees"
+          ></div>
+          <span class="city-temperature-unit">ºC</span>
+        </div>
+      </main>
+      <section class="forecast-section" id="forecast-section"></section>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Sejalekoloane" target="_blank">Seja Lekoloane</a> and is
+        <a href="https://github.com/Sejalekoloane/Mynewproject" target="_blank"> on GitHub</a> and
+        <a href="https://main--seja-weather-project.netlify.app/" target="_blank">hosted on Netlify</a>
+    </div>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>

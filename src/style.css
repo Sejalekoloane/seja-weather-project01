@@ -1,0 +1,149 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Roboto", sans-serif;
+  color: rgb(26, 26, 26);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-app {
+  background: white;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 10px;
+}
+
+#search-input {
+  background-color: #f9f7fe;
+  border: none;
+  padding: 13px;
+  border-radius: 5px;
+  font-size: 14px;
+  outline-color: #885df1;
+  transition: all 150ms ease-in-out;
+}
+
+#search-input: {
+  background-color: red;
+  border: none;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  padding: 20px;
+  width: 75%;
+  border-radius: 6px;
+}
+
+#search-btn {
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: #885df1;
+  color: white;
+  border: none;
+  padding: 20px;
+  line-height: 1;
+  border-radius: 5px;
+}
+
+#search-btn:hover {
+  color: white;
+  background-color: #f66a82;
+  box-shadow: 1px 1px 10px rgb(179, 179, 179);
+}
+
+#search-btn:active {
+  background-color: #885df1;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 30px 0 40px 0;
+  border-top: 1px solid #885df1;
+}
+
+.weather-details h1 {
+  font-size: 38px;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.weather-details p {
+  color: #bdb8b6;
+}
+
+#humidity,
+#wind {
+  color: #f66082;
+  font-weight: bold;
+}
+
+.city-temperature {
+  display: flex;
+  align-items: center;
+}
+
+.city-temperature-icon img {
+  width: 90px;
+}
+
+.city-temperature-degrees {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.city-temperature-unit {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.forecast-section {
+  border-bottom: 1px solid #885df1;
+  padding-bottom: 40px;
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.forecast-day {
+  display: flex;
+  flex-direction: column;
+}
+
+.forecast-icon img {
+  width: 80px;
+}
+
+.forecast-minmax {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  font-size: 13px;
+}
+
+.forecast-max {
+  font-weight: bold;
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  text-align: center;
+  padding-top: 15px;
+
+  color: rgba(39, 33, 66, 0.4);
+}
