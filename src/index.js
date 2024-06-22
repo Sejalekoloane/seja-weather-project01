@@ -116,6 +116,7 @@ function dateTime(date) {
     "Friday",
     "Saturday",
   ];
+
   let weekday = weekdays[currentDateTime.getDay()];
   dayContainer.innerHTML = `${weekday}`;
 
@@ -132,5 +133,4 @@ function dateTime(date) {
     minuteContainer.innerHTML = `${minutes}`;
   }
 }
-
 dateTime(currentDateTime);
